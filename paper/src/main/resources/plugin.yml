@@ -1,0 +1,6 @@
+name: SasaCommon
+version:  ${version}
+description: ${description}
+author: ddPn08
+main: run.dn5.template.PaperPlugin
+api-version: 1.18
