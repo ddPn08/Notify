@@ -1,5 +1,5 @@
-name: SasaCommon
+name: Notify
 author: ddPn08
 version: ${version}
 description: ${description}
-main: run.dn5.template.BungeePlugin
+main: run.dn5.notify.WaterfallPlugin

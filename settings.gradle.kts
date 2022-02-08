@@ -1,2 +1,3 @@
-rootProject.name = "template"
-include("paper", "waterfall", "velocity")
+rootProject.name = "Notify"
+
+include("paper", "waterfall", "velocity", "common")

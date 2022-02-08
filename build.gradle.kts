@@ -20,6 +20,7 @@ dependencies {
     implementation(project(":paper"))
     implementation(project(":waterfall"))
     implementation(project(":velocity"))
+    implementation(project(":common"))
 }
 
 tasks {
@@ -27,14 +28,19 @@ tasks {
         archiveFileName.set(artifactName)
     }
 
-    register("preDebug"){
+    register("copyJar"){
         dependsOn("clean", "shadowJar")
-        listOf("paper", "waterfall", "velocity").forEach {
-            copy {
-                from("$buildDir/libs/${artifactName}")
-                into(".debug/$it/plugins")
+        doLast {
+            listOf("paper", "waterfall", "velocity").forEach {
+                copy {
+                    from("$buildDir/libs/${artifactName}")
+                    into(".debug/$it/plugins")
+                }
             }
         }
+    }
+    register("preDebug"){
+        dependsOn("clean", "shadowJar", "copyJar")
     }
 }
 

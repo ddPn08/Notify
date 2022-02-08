@@ -1,6 +1,6 @@
-name: SasaCommon
+name: Notify
 version:  ${version}
 description: ${description}
 author: ddPn08
-main: run.dn5.template.PaperPlugin
+main: run.dn5.notify.PaperPlugin
 api-version: 1.18

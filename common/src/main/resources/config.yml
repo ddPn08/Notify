@@ -1,0 +1,2 @@
+# 送信したいWebhookのURLに変更してください。
+webhook: 'https://discord.com/api/webhooks/example'
