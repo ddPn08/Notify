@@ -8,11 +8,9 @@ import com.velocitypowered.api.plugin.annotation.DataDirectory
 import com.velocitypowered.api.proxy.ProxyServer
 import org.slf4j.Logger
 import run.dn5.notify.velocity.listeners.LoginListener
-import java.io.File
-import java.nio.file.Files
 import java.nio.file.Path
 
-@Plugin(id = "notify", name = "Notify", version = "1.0", authors = ["ddPn08"])
+@Plugin(id = "notify", name = "Notify", version = "", authors = [])
 class VelocityPlugin @Inject constructor(
     val server: ProxyServer,
     val logger: Logger,

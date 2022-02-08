@@ -1,6 +1,6 @@
-name: Notify
+name: ${name}
+author:  ${author}
 version:  ${version}
 description: ${description}
-author: ddPn08
 main: run.dn5.notify.PaperPlugin
 api-version: 1.18
